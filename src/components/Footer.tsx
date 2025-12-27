@@ -35,7 +35,9 @@ export default function Footer() {
 
         <div className="footer-grid">
           <div className="footer-col">
-            <h4 style={{ color: 'white' }}>WESTBURY<span style={{ color: 'var(--accent)' }}>LAW</span></h4>
+            <div style={{ marginBottom: '30px' }}>
+              <img src="/WestBurry.jpeg" alt="Westbury Law Logo" style={{ height: '60px', width: 'auto' }} />
+            </div>
             <p style={{ marginBottom: '25px' }}>
               At Westbury Law, integrity is at the heart of everything we do. We are dedicated to providing 
               honest advice, realistic expectations, and unwavering support.

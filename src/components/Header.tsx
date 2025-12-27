@@ -26,7 +26,7 @@ export default function Header() {
       <div className="nav-bar">
         <div className="container">
           <Link href="/" className="logo">
-            WESTBURY<span>LAW</span>
+            <img src="/WestBurry.jpeg" alt="Westbury Law Logo" style={{ height: '50px', width: 'auto', display: 'block' }} />
           </Link>
           
           <nav className="nav-links">
