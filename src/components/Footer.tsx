@@ -34,29 +34,8 @@ export default function Footer() {
         </div>
 
         <div className="footer-grid">
-          <div className="footer-col">
-            <div style={{ marginBottom: '30px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '10px' }}>
-              <img 
-                src="/WestBurry.jpeg" 
-                alt="Westbury Law Logo" 
-                style={{ 
-                  height: '80px', 
-                  width: 'auto',
-                  objectFit: 'contain'
-                }} 
-              />
-              <div style={{ 
-                fontSize: '1.4rem', 
-                fontWeight: '400', 
-                letterSpacing: '2px', 
-                color: 'white',
-                fontFamily: 'Marcellus, serif',
-                textTransform: 'uppercase'
-              }}>
-                WestBurry <span style={{ color: 'var(--accent)' }}>Law</span>
-              </div>
-            </div>
-            <p style={{ marginBottom: '25px' }}>
+          <div className="footer-col" style={{ paddingTop: '10px' }}>
+            <p style={{ marginBottom: '25px', fontSize: '0.95rem', lineHeight: '1.8' }}>
               At Westbury Law, integrity is at the heart of everything we do. We are dedicated to providing 
               honest advice, realistic expectations, and unwavering support.
             </p>
