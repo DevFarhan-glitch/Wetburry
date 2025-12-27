@@ -1,0 +1,26 @@
+{
+  "name": "westbury-law",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node --max-old-space-size=4096 node_modules/next/dist/bin/next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest",
+    "framer-motion": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest"
+  }
+}
