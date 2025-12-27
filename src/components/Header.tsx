@@ -25,28 +25,17 @@ export default function Header() {
       
       <div className="nav-bar">
         <div className="container">
-          <Link href="/" className="logo" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
+          <Link href="/" className="logo" style={{ display: 'flex', alignItems: 'center' }}>
             <img 
               src="/WestBurry.jpeg" 
               alt="Westbury Law Logo" 
               style={{ 
-                height: '60px', 
+                height: '65px', 
                 width: 'auto', 
                 display: 'block',
                 objectFit: 'contain'
               }} 
             />
-            <span style={{ 
-              fontSize: '0.8rem', 
-              fontWeight: '700', 
-              letterSpacing: '2px', 
-              color: 'var(--primary)',
-              fontFamily: 'Marcellus, serif',
-              textTransform: 'uppercase',
-              lineHeight: '1'
-            }}>
-              WestBurry <span style={{ color: 'var(--accent)' }}>Law</span>
-            </span>
           </Link>
           
           <nav className="nav-links">
