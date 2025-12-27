@@ -25,8 +25,17 @@ export default function Header() {
       
       <div className="nav-bar">
         <div className="container">
-          <Link href="/" className="logo">
-            <img src="/WestBurry.jpeg" alt="Westbury Law Logo" style={{ height: '50px', width: 'auto', display: 'block' }} />
+          <Link href="/" className="logo" style={{ display: 'flex', alignItems: 'center' }}>
+            <img 
+              src="/WestBurry.jpeg" 
+              alt="Westbury Law Logo" 
+              style={{ 
+                height: '65px', 
+                width: 'auto', 
+                display: 'block',
+                objectFit: 'contain'
+              }} 
+            />
           </Link>
           
           <nav className="nav-links">

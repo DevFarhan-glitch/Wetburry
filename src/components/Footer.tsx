@@ -36,7 +36,15 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-col">
             <div style={{ marginBottom: '30px' }}>
-              <img src="/WestBurry.jpeg" alt="Westbury Law Logo" style={{ height: '60px', width: 'auto' }} />
+              <img 
+                src="/WestBurry.jpeg" 
+                alt="Westbury Law Logo" 
+                style={{ 
+                  height: '80px', 
+                  width: 'auto',
+                  objectFit: 'contain'
+                }} 
+              />
             </div>
             <p style={{ marginBottom: '25px' }}>
               At Westbury Law, integrity is at the heart of everything we do. We are dedicated to providing 
