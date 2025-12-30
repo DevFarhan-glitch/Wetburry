@@ -53,7 +53,7 @@ export default function Header() {
             <Link href="/">Home</Link>
             <Link href="#about">About Us</Link>
             <Link href="#services">Business Visas</Link>
-            <Link href="#services">Personal Visas</Link>
+            <Link href="#personalvisas">Personal Visas</Link>
             <Link href="#contact">Contact</Link>
           </nav>
           

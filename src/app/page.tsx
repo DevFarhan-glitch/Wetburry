@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import About from '@/components/About';
 import Footer from '@/components/Footer';
+import PersonalVisas from '@/components/PersonalVisas';
 import { FileText, Calendar, Upload, CheckCircle, Phone, ArrowUp } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
@@ -108,6 +109,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <PersonalVisas />
       
       {/* How It Works Section */}
       <section ref={stepsRef} style={{ backgroundColor: 'var(--bg-tan)' }}>
