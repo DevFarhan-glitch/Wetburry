@@ -257,56 +257,161 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section style={{ padding: '100px 0', backgroundColor: 'var(--accent)' }}>
-        <div className="container" style={{ textAlign: 'center' }}>
-          <h2 style={{ 
-            color: 'white', 
-            marginBottom: '25px', 
-            fontSize: '2.8rem',
-            fontFamily: 'Marcellus, serif',
-            fontWeight: '400'
-          }}>
-            Ready to Talk? Schedule a Consultation Now
-          </h2>
-          <p style={{ 
-            color: 'rgba(255,255,255,0.95)', 
-            marginBottom: '40px', 
-            fontSize: '1.15rem', 
-            maxWidth: '650px', 
-            margin: '0 auto 40px',
-            lineHeight: '1.8'
-          }}>
-            We make it easy to get the help you need. Professional advice, fast responses, and a team that cares.
-          </p>
-          <div style={{ display: 'flex', gap: '25px', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center' }}>
-            <Link 
-              href="#contact" 
-              className="btn" 
-              style={{ backgroundColor: 'var(--primary)', padding: '18px 45px' }}
-            >
-              Contact Us
-            </Link>
-            <a 
-              href="tel:+447481758526" 
-              style={{ 
-                display: 'flex', 
-                alignItems: 'center', 
-                gap: '12px', 
-                color: 'white', 
-                fontWeight: '700',
-                fontSize: '1.3rem',
-                transition: 'var(--transition)'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'scale(1.05)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              <Phone size={26} /> +44 7481 758 526
-            </a>
+      <section id="contact" style={{ 
+        padding: '140px 0', 
+        backgroundColor: 'var(--primary)', 
+        color: 'white',
+        position: 'relative',
+        overflow: 'hidden'
+      }}>
+        {/* Decorative Background Elements */}
+        <div style={{
+          position: 'absolute',
+          top: '-10%',
+          right: '-5%',
+          width: '400px',
+          height: '400px',
+          background: 'radial-gradient(circle, rgba(184, 150, 126, 0.1) 0%, transparent 70%)',
+          borderRadius: '50%'
+        }} />
+        <div style={{
+          position: 'absolute',
+          bottom: '-10%',
+          left: '-5%',
+          width: '300px',
+          height: '300px',
+          background: 'radial-gradient(circle, rgba(184, 150, 126, 0.05) 0%, transparent 70%)',
+          borderRadius: '50%'
+        }} />
+
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '100px', alignItems: 'center' }}>
+            <div className="fade-in-left">
+              <div className="section-title" style={{ textAlign: 'left', marginBottom: '40px' }}>
+                <span style={{ color: 'var(--accent)', letterSpacing: '4px' }}>Get In Touch</span>
+                <h2 style={{ 
+                  color: 'white', 
+                  fontSize: '3.8rem', 
+                  marginBottom: '25px',
+                  WebkitTextStroke: '0.5px rgba(255,255,255,0.1)'
+                }}>
+                  Ready to <span style={{ color: 'var(--accent)' }}>Talk?</span><br />
+                  Let&apos;s Build Your Future
+                </h2>
+              </div>
+              <p style={{ 
+                color: 'rgba(255,255,255,0.7)', 
+                marginBottom: '50px', 
+                fontSize: '1.2rem', 
+                lineHeight: '1.9',
+                maxWidth: '550px'
+              }}>
+                Expert immigration guidance is just a message away. Whether you&apos;re looking for business expansion or family reunification, our team is here to support you.
+              </p>
+              
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+                <a 
+                  href="tel:+447481758526" 
+                  className="contact-info-card"
+                  style={{ 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    gap: '25px', 
+                    color: 'white',
+                    padding: '30px',
+                    background: 'rgba(255,255,255,0.03)',
+                    border: '1px solid rgba(255,255,255,0.08)',
+                    transition: 'var(--transition)',
+                    textDecoration: 'none'
+                  }}
+                >
+                  <div style={{
+                    width: '70px',
+                    height: '70px',
+                    background: 'var(--accent)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    borderRadius: '0',
+                    boxShadow: '0 15px 30px rgba(184, 150, 126, 0.2)'
+                  }}>
+                    <Phone size={28} color="white" />
+                  </div>
+                  <div>
+                    <span style={{ display: 'block', fontSize: '0.85rem', color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '3px', marginBottom: '8px', fontWeight: '700' }}>Direct Consultation</span>
+                    <span style={{ fontWeight: '600', fontSize: '1.5rem', fontFamily: 'Marcellus, serif' }}>+44 7481 758 526</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div className="fade-in-right" style={{ position: 'relative' }}>
+              {/* Floating accent bar */}
+              <div style={{
+                position: 'absolute',
+                top: '-20px',
+                right: '-20px',
+                width: '100px',
+                height: '100px',
+                borderTop: '2px solid var(--accent)',
+                borderRight: '2px solid var(--accent)',
+                zIndex: -1
+              }} />
+              <div style={{
+                position: 'absolute',
+                bottom: '-20px',
+                left: '-20px',
+                width: '100px',
+                height: '100px',
+                borderBottom: '2px solid var(--accent)',
+                borderLeft: '2px solid var(--accent)',
+                zIndex: -1
+              }} />
+
+              <div style={{ 
+                background: 'white', 
+                padding: '70px 60px', 
+                borderRadius: '0',
+                boxShadow: '0 50px 100px rgba(0,0,0,0.5)',
+                position: 'relative'
+              }}>
+                <form className="contact-form">
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }}>
+                    <div className="form-group">
+                      <label>Full Name</label>
+                      <input type="text" placeholder="John Doe" required />
+                    </div>
+                    <div className="form-group">
+                      <label>Email Address</label>
+                      <input type="email" placeholder="john@example.com" required />
+                    </div>
+                  </div>
+                  <div className="form-group">
+                    <label>Inquiry Type</label>
+                    <select required>
+                      <option value="">Choose a Service...</option>
+                      <option value="business">Business & Investor Visas</option>
+                      <option value="personal">Personal & Family Visas</option>
+                      <option value="citizenship">British Citizenship</option>
+                      <option value="sponsor">Sponsor License</option>
+                      <option value="other">General Consultation</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <label>Your Message</label>
+                    <textarea rows={5} placeholder="Tell us about your case..." required></textarea>
+                  </div>
+                  <button type="submit" className="btn" style={{ 
+                    width: '100%', 
+                    marginTop: '20px',
+                    padding: '22px',
+                    fontSize: '0.9rem'
+                  }}>
+                    Send Message <ArrowUp size={20} style={{ transform: 'rotate(90deg)' }} />
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>

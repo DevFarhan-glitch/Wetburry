@@ -21,7 +21,7 @@ const services = [
 
 export default function Footer() {
   return (
-    <footer className="footer" id="contact">
+    <footer className="footer">
       <div className="container">
         {/* Contact Section Header */}
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
